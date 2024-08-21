@@ -1,7 +1,6 @@
 import numpy as np
 import os
 import scipy.io as scio
-from sklearn.decomposition import SparsePCA,PCA,KernelPCA
 import cv2
 from normalize255 import normalize,sparse_coding
 import time
