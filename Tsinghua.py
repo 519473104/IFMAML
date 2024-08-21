@@ -88,8 +88,8 @@ for i in range(0,len(OPERATING)):
             output_path_subF = os.path.join(output_dir, operate_name,fault_name)
             if not os.path.exists(output_path_subF):
                 os.makedirs(output_path_subF)
-            # image_save_path = os.path.join(output_path_subF, fault_name + "_" + str(i_image) + '.png')
-            # cv2.imwrite(image_save_path, imgRGB)
+            image_save_path = os.path.join(output_path_subF, fault_name + "_" + str(i_image) + '.png')
+            cv2.imwrite(image_save_path, imgRGB)
 
 end = time.perf_counter()
 print('Running time: %s Seconds' % (end - start))
